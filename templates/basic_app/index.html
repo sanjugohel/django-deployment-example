@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html'%}
+
+{% block content %}
+<div class="container">
+    <div class="jumbotron">
+        <h1>Welcome to Index Page!</h1>
+    </div>
+    <h2>{{ text|title }}</h2>
+    <h2>{{ text|upper }}</h2>
+    <h2>{{ text|lower }}</h2>
+    <h2>{{ text|length }}</h2>
+    <h2>{{ number }}</h2>
+    <h2>{{ number|add:'99' }}</h2>
+    <p></p>
+    <p></p>
+    <h2>{{ text|cut:'hello' }}</h2>
+    <h2>{{ text|cut:'world' }}</h2>
+    <h2>{{ text|cut:'hello'|title }}</h2>
+    
+</div>
+{% endblock %}
